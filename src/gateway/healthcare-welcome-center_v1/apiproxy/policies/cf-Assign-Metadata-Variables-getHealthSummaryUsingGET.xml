@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="cf-Assign-Metadata-Variables-getHealthSummaryUsingGET">
+               <AssignVariable>
+                  <Name>json-to-xml.version</Name>
+                  <Value>1.0.0</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>json-to-xml.title</Name>
+                  <Value>JSON to XML transform</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>json-to-xml.description</Name>
+                  <Value>Transforms JSON message body to XML format</Value>
+               </AssignVariable>
+
+               <AssignVariable>
+                  <Name>proxy.title</Name>
+                  <Value>proxy</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.timeout</Name>
+                  <Value>120</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.verb</Name>
+                  <Value>keep</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.cache-response</Name>
+                  <Value>no-cache</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.cache-ttl</Name>
+                  <Value>900</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.version</Name>
+                  <Value>1.0.0</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.target-url</Name>
+                  <Value>$(backend-url)$(api.operation.path)</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.tls-profile</Name>
+                  <Value>tlsbackendprod</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.authz_uri</Name>
+                  <Value>https://artifactory-fof.appl.kp.org/artifactory/api/npm/npm-release</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>proxy.invoke_policy</Name>
+                  <Value>test</Value>
+               </AssignVariable>
+
+               <AssignVariable>
+                  <Name>cors.enabled</Name>
+                  <Value>false</Value>
+               </AssignVariable>
+
+               <AssignVariable>
+                  <Name>logs.title</Name>
+                  <Value>activity-log</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>logs.content</Name>
+                  <Value>activity</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>logs.error-content</Name>
+                  <Value>activity</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>logs.version</Name>
+                  <Value>1.0.0</Value>
+               </AssignVariable>
+
+               <AssignVariable>
+                  <Name>oauth.version</Name>
+                  <Value>2.0.0</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>oauth.title</Name>
+                  <Value>my-oauth-policy</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>oauth.oauth-provider-settings-ref</Name>
+                  <Value>delta</Value>
+               </AssignVariable>
+               <AssignVariable>
+                  <Name>oauth.default</Name>
+                  <Value>my-oauth</Value>
+               </AssignVariable>
+
+   <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+   <AssignTo createNew="false" transport="http"
+      type="request" />
+</AssignMessage>
